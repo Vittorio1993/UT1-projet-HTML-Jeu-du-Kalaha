@@ -1,0 +1,64 @@
+<html>
+
+	<head>	
+		<meta charset="utf-8">
+		<title>Le Jeu Du Kalaha</title>
+		<link href="style1.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body id="style1">
+	<!---<div id="formbackground" style="position:absolute; width:100%; height:100%; z-index:-1">  
+		<img src="img/14.jpg" height="100%" width="100%"/>
+	</div>!--->
+	
+	<div id="entete">
+	</div>
+	
+	<div class="wrap">
+	<nav>
+		<ul class="menu">
+			<li><a href="#"><span class="iconic home"></span> Acceuil</a></li>
+			<li><a href="principe.html"><span class="iconic plus-alt"></span> Principe du Jeu</a></li>
+			<li><a href="presentation.html"><span class="iconic magnifying-glass"></span> Présentation des interfaces</a>
+				<ul>
+					<li><a href="presentation.html#acceuil">L'interface de l'acceuil</a></li>
+					<li><a href="presentation.html#joueur">Joueur Contre Joueur</a></li>
+					<li><a href="presentation.html#ordinateur">Joueur Contre Ordinateur</a></li>
+				</ul>
+			</li>
+			<li><a href="telecharger.html"><span class="iconic download"></span> Téléchargement</a></li>
+			<li><a href="contact.html"><span class="iconic mail"></span> Contact</a>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="communication.html">Communication</a></li>
+				</ul>
+			</li>	
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+	</div>
+	
+	<div class="corps">
+	<font color="white" >
+	<br>
+	<br>
+	<h1>Bienvenue au jeu du Kalaha!</h1>
+	<br>
+	<br>
+    <video width="480px" height="270px" controls="controls">
+    <source src="video/how-to-play-mancala.mp4"></source>
+    </video>
+	</font>
+	<br>
+	<p>Choisissez un style :</p>
+	<p><select id ="select" name="combobox">
+			<option value="style1.css">Jaune</option>
+			<option value="style2.css">Bleu</option>
+			<option value="style3.css">Rouge</option>
+		</select>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<button onclick="setstyle()">Switch style</button></p>
+	</div>
+</html>

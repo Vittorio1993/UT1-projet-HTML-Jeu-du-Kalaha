@@ -1,0 +1,92 @@
+<html>
+
+	<head>	
+		<meta charset="utf-8">
+		<title>Le Jeu Du Kalaha</title>
+		<link href="style1.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+<body>
+<font color="black">
+	<div class="partie1" style="background-image:url(img/35.jpg);background-size:cover; 
+    text-align:center;">
+	
+	<div id="entete">
+	</div>
+	
+	<div class="wrap">
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html"><span class="iconic home"></span> Acceuil</a></li>
+			<li><a href="#"><span class="iconic plus-alt"></span> Principe du Jeu</a></li>
+			<li><a href="presentation.html"><span class="iconic magnifying-glass"></span> Présentation des interfaces</a>
+				<ul>
+						<li><a href="presentation.html#acceuil">L'interface de l'acceuil</a></li>
+					<li><a href="presentation.html#joueur">Joueur Contre Joueur</a></li>
+					<li><a href="presentation.html#ordinateur">Joueur Contre Ordinateur</a></li>
+				</ul>
+			</li>
+			<li><a href="telecharger.html"><span class="iconic download"></span> Téléchargement</a></li>
+			<li><a href="contact.html"><span class="iconic mail"></span> Contact</a>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="communication.html">Communication</a></li>
+				</ul>
+			</li>	
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+	</div>
+	<br>
+	<br>
+	<p>Le jeu du Kalaha est un jeu qui se joue à deux.</p>
+	<p>Le jeu se joue dans le sens inverse d’une aiguille d’une montre.</p>
+	<p>Le jeu est représenté comme ceci :</p> 
+	<img src="images_projet/start.jpg" title="start" id="start">
+	<p>LDans chaque trou( <img src="images_projet/trou.jpg" title="trou" id="trou"> )se trouve à l’intérieur 3 jetons.</p>
+	<p>Le but du jeu est de mettre le plus de jetons dans son magasin.</p>
+	<p>Tour 0 : </p>
+	<img src="images_projet/tour.jpg" title="tour" id="tour">
+	<br>
+	<br>
+	
+		
+	
+		<br>
+		<p style="margin: 0;">Au début de la partie, le joueur 1 peut commencer ou non. </p>
+		<p>Tour 1, le joueur 1 commence. Il prend dans n’importe quel trou tous les jetons. Il les repartit dans les trous qui suivent. </p>
+		<p>Exemple : </p> 
+		<img src="images_projet/choix.jpg" title="choix" id="choix">
+		<p><img src="images_projet/selection.jpg" title="selection" id="selection">	: Sélection du trou.</p>
+		<p>On repartit vers la gauche les jetons. On dépose un jeton dans chaque trou.  Ici cela donne : </p>
+		<img src="images_projet/joueurb.jpg" title="joueurb" id="joueurb">
+		<br>
+		<br>	
+		<p>C’est au tour du joueur 2 de jouer. Chaque joueur joue à tour de rôle sauf si le joueur qui doit jouer ne peut pas jouer. </p>
+		<p>Exemple : </p>
+		<img src="images_projet/joueur.jpg" title="joueur" id="joueur">
+		<br>
+		<br>
+	
+	
+		<br>
+		<p style="margin: 0;">Dans ce cas-là, le joueur 1 ne peut pas jouer car il n’a plus de boutons à répartir. <p>
+		</p>Ensuite, si le joueur a déposé dans son magasin le dernier jeton qu’il a réparti alors il peut rejouer. </p>
+		</p>Exemple :</p>
+		<img src="images_projet/rejouer.jpg" title="rejouer" id="rejouer">
+		<p>Dans ce cas-là le joueur 1 rejoue. </p>	
+		<p>Le jeu est terminé lorsqu’il n’y a plus de jetons à repartir. </p>
+		<p>Exemple :</p>
+		<img src="images_projet/fin.jpg" title="fin" id="fin">
+		<p>Il existe 3 cas pour désigner le vainqueur : </p> 
+		<p>Si X&gt;Y alors le joueur 1 gagne.</p>
+		<p>Si Y&gt;X alors le joueur 2 gagne  </p>
+		<p>Si X=Y alors il y a match nul. </p>
+		<p style="margin:0;"><a href="#entete">Retour au menu </a></p>
+		<br>
+	</div>
+</font>
+</body>
+</html>

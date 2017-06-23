@@ -1,0 +1,173 @@
+html, body, div, span, ul, li, nav{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers*/
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+} 
+
+
+/*
+Default Styles 
+--------------------------------------------------------------------*/
+
+body {
+	
+	/* background: url('img/244.jpg');
+	background-position:absolute;
+	background-size:width=100%,height=100%;*/
+	font-family:myFont; src: url("font/MyriadSetPro-Thin.ttf");
+	/*font-family: 'Droid Sans', sans-serif;*/
+}
+
+body#style1{
+	background-image:url(img/2.jpg);
+	background-size:cover;
+}
+.clearfix {
+	clear: both;
+}
+
+.wrap {
+	width: 800px;
+	/*height:15%;*/
+	/* position:absolute;
+	top:4em;*/
+
+	margin: 0 auto;
+}
+#entete{
+	height:5%;
+}
+.corps{
+	/*height:65%;*/
+	/*padding-left:20%;
+	padding-right:20%;
+	font-size: 15px;*/
+    text-align:center;
+	
+}
+.pied{
+	/*height:15%;*/
+}
+
+nav {
+	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+	background-image: linear-gradient(#fff, #ccc);
+	border-radius: 6px;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+	padding: 0 10px;
+	position: relative;
+}
+
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+.menu li a {
+	color: #444;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 6px 12px;
+	margin: 8px 8px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#ededed), to(#fff));
+	background-image: linear-gradient(#ededed, #fff);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+
+/* Dropdown styles */
+
+.menu ul {
+	position: absolute;
+	left: -9999px;
+	list-style: none;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.menu ul li {
+	float: none;
+}
+
+.menu ul a {
+	white-space: nowrap;
+}
+
+/* Displays the dropdown on hover and moves back into position */
+.menu li:hover ul {
+	background: rgba(255,255,255,0.7);
+	border-radius: 0 0 6px 6px;
+	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+	left: 5px;
+	opacity: 1;
+}
+
+/* Persistant Hover State */
+.menu li:hover a {
+	background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#ededed));
+	background-image: linear-gradient(#ccc, #ededed);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+
+.menu li:hover ul a {
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.menu li:hover ul li a:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#eee), to(#fff));
+	background-image: linear-gradient(#ededed, #fff);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+}
+
+
+@font-face {
+  font-family: 'IconicStroke';
+    src: url("fonts/iconic/iconic_stroke.eot");
+    src: local('IconicStroke'),
+       url("fonts/iconic/iconic_stroke.svg#iconic") format('svg'),
+	   url("fonts/iconic/iconic_stroke.otf") format('opentype');
+}
+
+.iconic {
+	color:inherit;
+	font-family: "IconicStroke";
+	font-size: 38px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+a.iconic:hover {
+	color:inherit;
+}
+
+.iconic.home:before { content: '!'; }
+.iconic.magnifying-glass:before { content: "f"; }
+.iconic.plus-alt:before { content: "="; }
+.iconic.mail:before { content: "m"; }
+.iconic.map-pin:before { content: "\\"; }
+.iconic.person:before { content: "u"; }
+.iconic.mail-at:before { content: "@"; }
+.iconic.phone:before { content: "n"; }
